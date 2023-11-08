@@ -1,0 +1,62 @@
+QToolButton
+{
+	width: 50px;
+	height: 50px;
+}
+
+
+QToolButton[ToolButton=newBtn] 
+{
+    qproperty-icon: url(:/qtdesignerplugintool/NewBtn.png);
+}
+
+QToolButton[ToolButton=openBtn] 
+{
+    qproperty-icon: url(:/qtdesignerplugintool/OpenBtn.png);
+}
+
+QToolButton[ToolButton=saveBtn] 
+{
+    qproperty-icon: url(:/qtdesignerplugintool/SaveBtn.png);
+}
+
+QToolButton[ToolButton=installBtn] 
+{
+    qproperty-icon: url(:/qtdesignerplugintool/InstallBtn.png);
+}
+
+QToolButton[ToolButton=deleteBtn] 
+{
+    qproperty-icon: url(:/qtdesignerplugintool/DeleteBtn.png);
+}
+
+QToolButton[ToolButton=setupBtn] 
+{
+    qproperty-icon: url(:/qtdesignerplugintool/SetupBtn.png);
+}
+
+QToolButton[ToolButton=matchBtn] 
+{
+    qproperty-icon: url(:/qtdesignerplugintool/MatchBtn.png);
+}
+
+QToolButton:hover[ToolButton=newBtn] 
+{
+    qproperty-icon: url(:/qtdesignerplugintool/NewBtnHover.png);
+}
+
+QToolButton:disabled[ToolButton=newBtn] 
+{
+    qproperty-icon: url(:/qtdesignerplugintool/NewBtnDisabled.png);
+}
+
+QWidget[WidgetType=PluginDataWidget]
+{
+	background-color: #ffffff;
+	border: 1px solid #c4c4c4;
+}
+
+QWidget[WidgetType=PluginDataWidget]
+{
+	//border: 1px solid #c4c4c4;
+}

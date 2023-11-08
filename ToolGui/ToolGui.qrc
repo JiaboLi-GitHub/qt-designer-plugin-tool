@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/qtdesignerplugintool">
+        <file alias="GlobalStyle.qss">Resources/Qss/GlobalStyle.qss</file>
+        <file alias="LOGO.png">Resources/Png/LOGO.png</file>
+        <file alias="AlimamaDongFangDaKai-Regular.ttf">Resources/Font/AlimamaDongFangDaKai-Regular.ttf</file>
+        <file alias="NewBtn.png">Resources/Png/NewBtn.png</file>
+        <file alias="NewBtnDisabled.png">Resources/Png/NewBtnDisabled.png</file>
+        <file alias="NewBtnHover.png">Resources/Png/NewBtnHover.png</file>
+        <file alias="DeleteBtn.png">Resources/Png/DeleteBtn.png</file>
+        <file alias="InstallBtn.png">Resources/Png/InstallBtn.png</file>
+        <file alias="MatchBtn.png">Resources/Png/MatchBtn.png</file>
+        <file alias="OpenBtn.png">Resources/Png/OpenBtn.png</file>
+        <file alias="SaveBtn.png">Resources/Png/SaveBtn.png</file>
+        <file alias="SetupBtn.png">Resources/Png/SetupBtn.png</file>
+    </qresource>
+</RCC>
