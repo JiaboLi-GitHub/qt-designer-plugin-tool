@@ -1,3 +1,3 @@
 # qt-designer-plugin-tool
 
-我先测试一下
+Qt Designer插件封装工具
