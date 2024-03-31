@@ -8,9 +8,6 @@
 
 constexpr char QtDirVariableName[] = "QTDIR";
 
-#include <qdebug.h>
-
-
 ToolBarManage::ToolBarManage(ToolBar* toolBar, QObject* parent)
 	: QObject(parent), m_toolBar(toolBar)
 {
@@ -76,6 +73,8 @@ void ToolBarManage::newPluginSlots(QString widgetDLLFilePath)
 
 	if (ok)
 	{
+		m_dllPath = pluginDLLFilePath;
+		m_jsonPath = pluginJsonFilePath;
 		emit openPluginSignals(pluginDLLFilePath, pluginJsonFilePath);
 		m_isOpenPlugin = true;
 	}
@@ -138,6 +137,7 @@ void ToolBarManage::installPluginSlots()
 		return;
 	}
 
+	QString qtBinPath = m_qtDir + "/bin";
 	QString qtDesignerPath = m_qtDir + "/plugins/designer";
 	QString designerDataPath = qtDesignerPath + "/DesignerData/" + m_pluginName;
 	QString designerPluginPath = QCoreApplication::applicationDirPath() + "/DesignerPlugin.dll";
@@ -145,7 +145,7 @@ void ToolBarManage::installPluginSlots()
 	QString newDllPath = designerDataPath + "/" + m_pluginName + ".dll";
 	QString newJsonPath = designerDataPath + "/" + m_pluginName + ".json";
 	QString newDesignerPluginPath = qtDesignerPath + "/DesignerPlugin.dll";
-	QString newSharedLibraryPath = qtDesignerPath + "/SharedLibrary.dll";
+	QString newSharedLibraryPath = qtBinPath + "/SharedLibrary.dll";
 	QDir pluginDataDir(designerDataPath);
 
 	bool ok = true;

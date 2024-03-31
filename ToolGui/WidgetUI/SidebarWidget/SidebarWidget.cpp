@@ -31,11 +31,11 @@ void SidebarWidget::initUI()
 	m_treeView->header()->hide();
 
 	this->setStyleSheet(R"(
-	QWidget { background-color: white; }
-)");
+		QWidget { background-color: white; }
+	)");
 	m_tabWidget->setStyleSheet(R"(
-QTabWidget { background-color: white; }
-QTabWidget::pane { border: none; }
+		QTabWidget { background-color: white; }
+		QTabWidget::pane { border: none; }
 	)");
 }
 
